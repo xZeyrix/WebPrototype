@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Урок JavaScript</title>
+</head>
+
+<body>
+    <main class="page">
+        <header class="hero">
+            <h1>Урок JavaScript для студентов</h1>
+            <p>Простой пример, который показывает, как JavaScript работает с HTML, CSS и событиями.</p>
+        </header>
+
+        <section class="cards">
+            <article class="card">
+                <h2>1. Приветствие</h2>
+                <p id="greeting">Нажмите кнопку, чтобы увидеть JavaScript в действии.</p>
+                <button id="greetBtn">Показать приветствие</button>
+            </article>
+
+            <article class="card">
+                <h2>2. Ввод текста</h2>
+                <label for="nameInput">Введите имя:</label>
+                <input id="nameInput" type="text" placeholder="Например, Алина">
+                <button id="sayHelloBtn">Сказать привет</button>
+                <p id="helloOutput" class="output"></p>
+            </article>
+
+            <article class="card">
+                <h2>3. Список тем</h2>
+                <p>JavaScript может создавать элементы на странице из данных.</p>
+                <ul id="topicsList" class="topic-list"></ul>
+                <button id="loadTopicsBtn">Загрузить темы</button>
+            </article>
+
+            <article class="card">
+                <h2>4. Цвет и случайное число</h2>
+                <p>Изменение стилей и работа со случайными значениями.</p>
+                <button id="colorBtn">Изменить цвет фона</button>
+                <button id="randomBtn">Показать случайное число</button>
+                <p id="randomOutput" class="output"></p>
+            </article>
+
+            <article class="card">
+                <h2>5. Таймер</h2>
+                <p>Нажимайте кнопки для управления таймером.</p>
+                <button id="timerStartBtn">Старт</button>
+                <button id="timerResetBtn">Сброс</button>
+                <p id="timerValue" class="output"></p>
+            </article>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
