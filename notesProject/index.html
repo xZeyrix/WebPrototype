@@ -11,23 +11,32 @@
     <main class="page">
         <header class="hero">
             <h1>Мои заметки</h1>
+            <div class="heroButtons" id="heroButtons">
+                <button class="createNoteButton">Создать заметку</button>
+                <button>Удалить все заметки</button>
+            </div>
         </header>
-        <section class="empty">
-            <h2 class="emptyNotesHeader">У вас пока нет заметок.</h2>
-            <button class="createFirstNote"></button>
-        </section>
-        <!-- <section class="notes">
-            <div class="note">
-                <h2>Название заметки</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt est ducimus officiis cupiditate tenetur iste praesentium doloribus. Nostrum voluptates autem maiores molestiae dignissimos eaque illo architecto temporibus itaque totam expedita, perferendis explicabo sunt voluptatum amet, quod quae consequatur neque cum dolore, odit odio unde? Cumque odio a velit eum eaque.</p>
-                <button class="removeNote">Удалить заметку</button>
+        <div id="createNoteForm" class="createNoteForm">
+            <div class="content">
+                <span id="closeBtn">&times;</span>
+                <h2>Создание заметки</h2>
+                <input id="headerInput" type="text" placeholder="Название">
+                <input id="textInput" type="text" placeholder="Текст">
+                <button id="createNewNoteBtn">Создать заметку</button>
             </div>
-            <div class="note">
-                <h2>Название заметки</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, nemo, quisquam adipisci nulla error, a omnis hic ab consequuntur eos nobis obcaecati praesentium odit illo. Neque modi sit esse similique alias atque quaerat error veniam ab! Provident culpa iste sapiente doloribus! Quaerat voluptates quo earum quis, cum possimus exercitationem aspernatur.</p>
-                <button class="removeNote">Удалить заметку</button>
-            </div>
-        </section> -->
+        </div>
+        <section class="empty" id="empty">
+                <h2>У вас пока нет заметок.</h2>
+                <button class="createNoteButton">Создать первую заметку</button>
+            </section>
+        <section class="notes" id="notesContainer"></section>
+        <!-- <div class="note">
+            <h2>Название заметки</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, nemo, quisquam adipisci nulla error, a omnis hic ab consequuntur eos nobis obcaecati praesentium odit illo. Neque modi sit esse similique alias atque quaerat error veniam ab! Provident culpa iste sapiente doloribus! Quaerat voluptates quo earum quis, cum possimus exercitationem aspernatur.</p>
+            <button class="removeNote">Удалить заметку</button>
+        </div> -->
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
