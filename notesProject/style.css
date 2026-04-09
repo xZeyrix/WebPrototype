@@ -1,0 +1,89 @@
+:root {
+    color-scheme: dark;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #111111;
+    color: #FAFAFA;
+    line-height: 1.6;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+}
+
+.page {
+    width: min(1100px, 100%);
+}
+
+.hero {
+    padding: 32px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #222222 0%, #222222 100%);
+    color: #FAFAFA;
+    box-shadow: 0 0px 3px rgba(255, 252, 60, 0.3);
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    margin-bottom: 12px;
+}
+
+.notes {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.note {
+    padding: 22px;
+    border-radius: 18px;
+    background: #111111;
+    box-shadow: 0 0px 3px rgba(255, 252, 60, 0.5);
+}
+
+.note h2 {
+    margin-bottom: 14px;
+    font-size: 1.25rem;
+}
+
+.note p {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.removeNote {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 11px 18px;
+    font-size: 1rem;
+    color: #111111;
+    background: #9b9b9b;
+    transition: transform 0.18s ease, background-color 0.18s ease;
+}
+
+.removeNote:hover {
+    background: rgb(255, 192, 192);
+}
+
+.empty {
+    padding: 32px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #222222 0%, #222222 100%);
+    color: #FAFAFA;
+    box-shadow: 0 0px 3px rgba(255, 252, 60, 0.3);
+}
+
+.createFirstNote {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 11px 18px;
+    font-size: 1rem;
+    color: #111111;
+    background: #9b9b9b;
+    transition: transform 0.18s ease, background-color 0.18s ease;
+}
